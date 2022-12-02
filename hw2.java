@@ -21,16 +21,16 @@ public class hw2 {
         return arr;
     }
 
-    public static void printArray(String message, int[] array) {
-        message += "\n[";
+    public static void printArray(String msg, int[] array) {
+        msg += "\n[";
         for (int i = 0; i < array.length; i++) {
-            message += array[i];
+            msg += array[i];
             if (i < array.length - 1) {
-                message += ", ";
+                msg += ", ";
             }
         }
-        message += "]";
-        System.out.println(message);
+        msg += "]";
+        System.out.println(msg);
     }
 
     public static int[] sortArray(int[] array, int first, int last) {
