@@ -4,7 +4,8 @@ import java.util.Random;
 
 public class hw2 {
 
-    public static void main(String[] args) {      
+    public static void main(String[] args) {   
+           
         int[] array = createArray();
         printArray("Исходный массив:", array);
         array = sortArray(array, 0, array.length - 1);
@@ -13,7 +14,7 @@ public class hw2 {
 
     public static int[] createArray() {
         Random r = new Random();
-        int size = r.nextInt(1, 10);
+        int size = r.nextInt(10);
         int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
             arr[i] = r.nextInt(100);
